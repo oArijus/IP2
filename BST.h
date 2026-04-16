@@ -7,13 +7,12 @@
 
 // Abstract Data Type for a Binary Search Tree.
 
-namespace custom_bst {
+namespace CustomBST {
 
     // Exception thrown when an operation attempts to insert a value that already exists.
     class DuplicateNodeException : public std::logic_error {
     public:
-        explicit DuplicateNodeException(const std::string& message) : std::logic_error(message) {
-        }
+        explicit DuplicateNodeException(const std::string& message); 
     };
 
     // BST class implementing a Binary Search Tree set.

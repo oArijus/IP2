@@ -1,0 +1,67 @@
+log.txt in the original code:
+
+Initial size is 0 [PASS]
+
+Adding elements 10, 5 and 15.
+Tree size is 3 [PASS]
+Search finds existing element (10) [PASS]
+Search finds existing element (5) [PASS]
+Search finds existing element (15) [PASS]
+Search doesn't find element (100) [PASS]
+Search doesn't find element (-5) [PASS]
+Search doesn't find element (30) [PASS]
+
+Making a copy of the BST.
+Deep copy test [PASS]
+
+Adding 20 to the copy.
+Modifying copy does not affect original [PASS]
+Operator < evaluates correctly [PASS]
+Operator > evaluates correctly [PASS]
+Operator <= evaluates correctly [PASS]
+Operator >= evaluates correctly [PASS]
+Deleting 20 from copy restoring balance with the original [PASS]
+
+Changing 15 to 18.
+Update: 18 exists after changing 15 [PASS]
+Update: 15 no longer exists [PASS]
+Duplicate insertion throws DuplicateNodeException [PASS]
+Invalid deletion throws std::invalid_argument [PASS]
+Clear operator empties tree [PASS]
+
+Tests completed: 20/20 passed.
+
+
+log.txt when the error was injected:
+
+
+Initial size is 0 [PASS]
+
+Adding elements 10, 5 and 15.
+Tree size is 3 [FAIL]
+Search finds existing element (10) [PASS]
+Search finds existing element (5) [PASS]
+Search finds existing element (15) [PASS]
+Search doesn't find element (100) [PASS]
+Search doesn't find element (-5) [PASS]
+Search doesn't find element (30) [PASS]
+
+Making a copy of the BST.
+Deep copy test [PASS]
+
+Adding 20 to the copy.
+Modifying copy does not affect original [FAIL]
+Operator < evaluates correctly [FAIL]
+Operator > evaluates correctly [FAIL]
+Operator <= evaluates correctly [PASS]
+Operator >= evaluates correctly [PASS]
+Deleting 20 from copy restoring balance with the original [FAIL]
+
+Changing 15 to 18.
+Update: 18 exists after changing 15 [PASS]
+Update: 15 no longer exists [PASS]
+Duplicate insertion throws DuplicateNodeException [PASS]
+Invalid deletion throws std::invalid_argument [PASS]
+Clear operator empties tree [PASS]
+
+Tests completed: 15/20 passed.

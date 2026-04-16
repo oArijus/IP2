@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BST.h"
 
-using namespace custom_bst;
+using namespace CustomBST;
 using namespace std;
 
 int main() {
